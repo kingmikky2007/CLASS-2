@@ -1,0 +1,48 @@
+/* Reset and base styles */
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header/Navigation styles */
+.main-nav {
+    background-color: #666262;
+    color: white;
+    text-align: center; /* Center the nav items */
+    padding: 10px 0;
+    width: 100%; /* Ensure the nav takes full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.nav-pills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center nav items; use flex-start for left, flex-end for right */
+    gap: 30px; /* Adjust spacing between items */
+}
+
+.nav-pills ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-pills ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Optional: Limit container width for responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+}
